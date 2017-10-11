@@ -15,7 +15,7 @@ class Shoe
   end
 
   def brand(brand)
-    if BRANDS.any? { |a| a == brand}
+    if BRANDS.find { |a| a == brand}
     else
       BRANDS << brand
     end
