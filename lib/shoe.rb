@@ -15,6 +15,8 @@ class Shoe
   end
 
   def brand(brand)
-    BRANDS << brand
+    if (BRANDS.any? { |a| a == brand})!
+      BRANDS << brand
+    end
   end
 end
