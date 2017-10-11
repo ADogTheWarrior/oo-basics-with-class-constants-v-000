@@ -6,7 +6,10 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
+    if BRANDS.find { |a| a == brand}
+    else
+      BRANDS << brand
+    end
   end
 
   def cobble
